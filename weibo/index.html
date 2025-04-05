@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=2,viewport-fit=cover"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta name="author" content="SimonAKing"><link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/favicon.ico"><link rel="shortcut icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/favicon.ico"><link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/SimonAKing/images/PWA/apple-touch-icon.png"><title>微博</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SimonAKing/font/comic.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-roboto@1.1.13/index.min.css"><link id="style" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/css/style-1cda497ea4.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/css/post-3bb2ca1a5f.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/css/module/toc-15e89e9d69.css"><meta name="theme-color"><meta name="apple-mobile-web-app-status-bar-style"><meta name="msapplication-navbutton-color"><script>
+	window.selectedColor = ''
+	window.themeColor = localStorage.getItem("theme-color") || "#7af"
+	window.changeColor = function(themeColor){
+		document.documentElement.style.setProperty('--theme-color', themeColor);
+		document.querySelector("meta[name=theme-color]").setAttribute("content", themeColor);
+		document.querySelector("meta[name=apple-mobile-web-app-status-bar-style]").setAttribute("content", themeColor);
+		document.querySelector("meta[name=msapplication-navbutton-color]").setAttribute("content", themeColor);
+		localStorage.setItem('theme-color', themeColor)
+	}
+	changeColor(themeColor)
+
+	window.isPhone = /Android|iOS|iPhone|iPad|iPod|Windows Phone|KFAPWI/i.test(navigator.userAgent) || (window.innerWidth < 1400)
+	window.isHome = false
+	window.isPost = true
+	if(window.isPost){
+		window.isReward = false
+		window.isWeibo = true
+	}
+</script><link rel="manifest" href="https://tomotoes.com/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="mobile-web-app-title" content="SimonAKing"><meta name="msapplication-starturl" content="https://tomotoes.com"><meta name="application-name" content="SimonAKing"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="SimonAKing"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="prefetch" href="https://cdn.jsdelivr.net/"><link rel="dns-prefetch" href="https://api.github.com/"><link rel="dns-prefetch" href="https://disqus.com"><link rel="dns-prefetch" href="https://tomotoes-com.disqus.com"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-109696496-3"></script><script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-109696496-3');
+</script><link rel="canonical" href="https://tomotoes.com/blog/weibo/"><link rel="alternate" type="application/atom+xml" title="SimonAKing" href="/blog/atom.xml"><meta property="og:title" content="微博 | SimonAKing"><meta property="og:site_name" content="SimonAKing"><meta property="og:type" content="article"><meta property="og:url" content="https://tomotoes.com/blog/weibo/"><meta property="og:locale" content="zh-CN"><meta name="description" content="想法,灵感汇总 - SimonAKing - SimonAKing"><meta name="keywords" content="个人微博,技术分享,情感树洞,想法灵感,Page,SimonAKing,Blog,博客"><meta property="article:published_time" content="2020-02-07T15:25:39.000Z"><meta property="article:modified_time" content="2025-04-01T04:41:11.568Z"><meta property="og:updated_time" content="2025-04-01T04:41:11.568Z"><meta property="article:author" content="SimonAKing"><meta property="article:tag" content="个人微博,技术分享,情感树洞,想法灵感,Page,SimonAKing,Blog,博客"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="https:&#x2F;&#x2F;tomotoes.com&#x2F;blog&#x2F;weibo&#x2F;"><meta name="twitter:creator" content="SimonAKing"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://tomotoes.com/blog/weibo/",
+    "@type": "BlogPosting",
+    "logo": "https://tomotoes.com/images/PWA/192.png",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://tomotoes.com/blog/weibo/"
+    },
+    "headline": "微博 | SimonAKing",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://tomotoes.com/images/PWA/192.png"
+    },
+    "datePublished": "2020-02-07T15:25:39.000Z",
+    "dateModified": "2025-04-01T04:41:11.568Z",
+    "author": {
+        "@type": "Person",
+        "name": "SimonAKing",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/avatar.jpg"
+        },
+        "description": "STDIN | Think &gt;&gt; /dev/Mind"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "SimonAKing",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://tomotoes.com/images/PWA/192.png"
+        }
+    },
+    "keywords": "个人微博,技术分享,情感树洞,想法灵感,Page,SimonAKing,Blog,博客",
+    "description": "想法,灵感汇总 - SimonAKing - SimonAKing"
+}
+</script><!--[if lt IE 9]><style> .alert { padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px } .alert-danger { background-color: #f2dede; border-color: #ebccd1; color: #a94442; border-bottom: 1px solid #ebccd1 } .alert-link { color: #843534; font-weight: bold } .topframe { margin: 0; padding-left: 15px; padding-right: 15px; text-align: center; border-radius: 0; position: fixed; left: 0; right: 0; top: 0; z-index: 1000 } </style><div class="alert alert-danger topframe"> 你的浏览器实在<strong>太太太太太太旧了</strong>，放学别走，升级完浏览器再说！ <a target="_blank" class="alert-link" href="//browsehappy.com">立即升级</a></div><script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script><script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script><![endif]--></head><body itemscope itemtype="http://schema.org/WebPage"><aside id="menu" class="hide"><div class="inner flex-row-vertical"><div class="brand-wrap" itemprop="author" itemscope itemtype="http://schema.org/Person"><div class="brand fade"> <a class="avatar waves-effect waves-circle waves-light"><img src="https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/avatar.jpg" title="avatar" alt="avatar" itemprop="image"></a><div class="introduce"><h5 class="nickname " id="name">SimonAKing</h5><div class="links-of-author fade"><span class="links-of-author-item" id="link-wechat"><a href="javascript:void(0)" rel="noopener noreferrer" title="Wechat"><i class="icon icon-lg icon-wechat"></i></a></span><span class="links-of-author-item"><a href="mailto:simon@tomotoes.com" rel="noopener noreferrer" target="_blank" title="Email"><i class="icon icon-lg icon-email"></i></a></span><span class="links-of-author-item"><a href="https://x.com/simon_aking" rel="external nofollow noopener noreferrer" target="_blank" title="X"><i class="icon icon-lg icon-XTwitter"></i></a></span><span class="links-of-author-item"><a href="https://github.com/SimonAKing" rel="external nofollow noopener noreferrer" target="_blank" title="Github"><i class="icon icon-lg icon-github"></i></a></span></div><div class="statistics"><ul><li><a class="total-link" href="/blog/weibo/"><div class="count" id="weibo-count">∞</div><div class="type">微博</div></a></li><li><a class="total-link" href="/blog/archives/"><div class="count">29</div><div class="type">文章</div></a></li><li><a class="total-link" href="/gallery/"><div class="count" id="photo-count">∞</div><div class="type">相册</div></a></li></ul></div></div></div></div><div class="scroll-wrap flex-col"><ul class="nav fade"><li class="items waves-block waves-effect"><a href="/blog/"><i class="icon icon-lg icon-xiazai45"></i> <span style="font-size:1em">主 页</span><i class="icon icon-lg icon-chevronleft custom-caret-left"></i></a></li><li class="items waves-block waves-effect"><a href="/blog/archives/"><i class="icon icon-lg icon-guidangxiangmu"></i> <span style="font-size:1em">归 档</span><i class="icon icon-lg icon-chevronleft custom-caret-left"></i></a></li><li class="items waves-block waves-effect"><a href="/blog/tags/"><i class="icon icon-lg icon-biaoqian"></i> <span style="font-size:1em">标 签</span><i class="icon icon-lg icon-chevronleft custom-caret-left"></i></a></li><li class="items waves-block waves-effect active"><a href="/blog/weibo/"><i class="icon icon-lg icon-biaoqing"></i> <span style="font-size:1em">微 博</span><i class="icon icon-lg icon-chevronleft custom-caret-left"></i></a></li><li class="items waves-block waves-effect"><a href="//tomotoes.com/gallery/"><i class="icon icon-lg icon-xiangce"></i> <span style="font-size:1em">相 册</span><i class="icon icon-lg icon-chevronleft custom-caret-left"></i></a></li><li class="items waves-block waves-effect"><a href="//thinking.tomotoes.com/" target="_blank" rel="noopener"><i class="icon icon-lg icon--Idea"></i> <span style="font-size:1em">思 考</span><i class="icon icon-lg icon-chevronleft custom-caret-left"></i></a></li><li class="items waves-block waves-effect"><a href="//tomotoes.com/about/"><i class="icon icon-lg icon-zhifeiji"></i> <span style="font-size:1em">关 于</span><i class="icon icon-lg icon-chevronleft custom-caret-left"></i></a></li><li class="items waves-block waves-effect"><a href="//tomotoes.com"><i class="icon icon-lg icon-icon--"></i> <span style="font-size:1em">导航</span><i class="icon icon-lg icon-chevronleft custom-caret-left"></i></a></li><div class="sliding-bar"></div></ul><div class="nav-tool"><a class="nav-tool-item exchange" data-title="简繁互换" href="javascript:translatePage();"><i class="fade icon icon-lg icon-zhuanhuan custom-exchange"></i></a><a class="nav-tool-item picker" data-title="调色板" id="color-picker-icon"><i class="fade icon icon-lg icon-color-palette-outlin custom-picker"></i></a><a class="nav-tool-item light" data-title="关灯" href="javascript:switchNightMode();"><i class="fade icon icon-lg icon-lightbulbo custom-lightbulb"></i></a></div></div></div></aside><main id="main" class="in_post"><header class="top-header " id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="flex-row"><a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle"><i class="icon icon-lg icon-naviconround"></i></a><div class="flex-col"></div><div class="search-wrap" id="search-wrap"><a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back"><i class="icon icon-lg icon-chevronleft"></i></a> <input type="text" id="key" aria-label="search" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字"><a href="javascript:;" title="搜索" class="header-icon waves-effect waves-circle waves-light" id="search"><i class="icon icon-lg icon-search"></i></a></div></div><div class="header-title ellipsis">微博</div></header><header class="content-header post-header"><canvas class="flickering-grid-canvas"></canvas></header><div class="container body-wrap"><aside class="post-widget"><nav class="post-toc-wrap fade" id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#💡💡"><span class="post-toc-number">1.</span> <span class="post-toc-text">💡💡</span></a></li></ol></nav></aside><article id="post-微博" class="post-article article-type-post fade" itemscope itemtype="http://schema.org/Article"><div class="post-card"><h1 class="post-card-title" itemprop="name headline">&nbsp;</h1><script>
+			window.addEventListener('DOMContentLoaded', function (){ var postTitle = document.querySelector('.post-card-title'); var typingbefore = '一大堆平凡的日子'; var _i = 0; function typetitle() { if (_i <= typingbefore.length) { postTitle.innerHTML = `${typingbefore.slice(0, _i++)}|`; setTimeout(typetitle, 120); } else { postTitle.innerHTML = typingbefore; } } typetitle(); })
+		</script><div class="post-meta"><div class="post-category-phone"><ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/blog/categories/Page/">Page</a></li></ul></div> <time itemprop="dateCreated datePublished" class="post-time" title="2020-02-07 23:25:39" datetime="2020-02-07T15:25:39.000Z">2020-02-07</time></div><div class="post-count-custom"><i class="icon icon-lg icon-commenting-o"></i> 阅读本文可能花费您&nbsp;<span class="post-count">1</span>&nbsp;分钟</div><link itemprop="mainEntityOfPage" href="https://tomotoes.com/blog/weibo/" style="display:none"><div class="post-content" id="post-content" itemprop="articleBody"><h2 id="💡💡"><a href="#💡💡" class="headerlink" title="💡💡"></a>💡💡</h2></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/css/page/weibo/post-caf267b224.css"><div id="weibo-container"></div><script>
+	window.WEIBO = {
+		root: "/blog/weibo",
+		name: "SimonAKing",
+		token: ["9c48ed2297d7d9bf9447", "6de723dbf1a6e4adeacd"],
+		owner: "SimonAKing",
+		repo: "weibo",
+		pageSize: 6,
+		offsetTop: 1,
+		debounce: 250,
+		throttle: 200,
+		returnText: "返回",
+		loading: "微博加载中...",
+		loadMore: "加载更多",
+		loadSuccess: "加载成功",
+		loadFail: "加载失败",
+		auth: "正在授权...",
+		egg: {
+			enable: true,
+			text1: "可恶，你居然看完了...",
+			text2: "我...我可是有底线的！",
+			button: "不要点我！笨蛋！",
+			tip1: "什么？你竟召唤出了神兽三角怪！",
+			tip2: "食用秘籍：方向键移动，空格键射击。可不要做什么破环吖！",
+		},
+		animation: {
+			appearAnimation: "accordionVertical",
+			enterAnimation: "accordionVertical",
+			leaveAnimation: "accordionVertical",
+		},
+		sendQueueKey: "sendQueue",
+	};
+	window.LEANCLOUD = {
+		appId: "4tYOCrQBIg1DHopcgeK8wIBw-MdYXbMMI",
+		appKey: "qJezo4qWSKNgJSLjmcHLzv0E",
+		id: "5e49431bf94e0f00083dcf42",
+		table: "Reaction",
+		column: "reactions",
+	};
+	window.COMMENT = {
+		// domain: "http://localhost:3000",
+		// clientID: "56af6ab05592f0a2d399",
+		// clientSecret: "5d7e71a1b6130001e84956420ca5b88bc45b7d3c",
+
+		domain: "https://tomotoes.com",
+		clientID: "694df1779e48d5a450d3",
+		clientSecret: "66cd18c65e4b5cacf99293c740b6d3c38454099e",
+
+		token: ["dfc3fd8c879594ddc2f8", "26b611ccff4047bfb0a5"],
+		repo: "weibo",
+		owner: "SimonAKing",
+		admin: ["SimonAKing"],
+		pageSize: 8,
+		pageDirection: "first",
+		initText: "评论加载中 ...",
+		firstCommentText: "看什么看！你这个美少年！",
+		placeholder: "博主这么菜，你难道无动于衷吗？",
+		supportMD: "支持 Markdown 语法",
+		edit: "编辑",
+		preview: {
+			text: "预览",
+			fail: "预览失败",
+			success: "预览成功",
+			loading: "预览中...",
+			html: "渲染文本中...",
+		},
+		login: {
+			text: "使用 GitHub 登录",
+			fail: "登录失败",
+			success: "登录成功",
+			loading: "请允许弹出窗口",
+		},
+		logout: "注销",
+		loadMore: {
+			text: "加载更多",
+			fail: "加载失败",
+			success: "加载成功",
+			loading: "加载中...",
+		},
+		comment: {
+			text: "发表评论",
+			fail: "评论失败",
+			success: "评论成功",
+			loading: "评论中...",
+		},
+		update: {
+			text: "更新评论",
+			fail: "更新失败",
+			success: "更新成功",
+			loading: "更新中...",
+			cancel: "取消",
+		},
+		commented: "发表于",
+		counts: " 条评论",
+		anonymous: "未登录用户",
+		width: Math.floor(window.outerWidth * 0.4),
+		height: Math.floor(window.outerHeight * 0.4),
+		id: window.location.href,
+		title: window.document.title,
+		proxy:
+			"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token",
+		flipMoveOptions: {
+			staggerDelayBy: 200,
+			appearAnimation: "accordionVertical",
+			enterAnimation: "accordionVertical",
+			leaveAnimation: "accordionVertical",
+		},
+	};
+</script><script>
+	!(function (e) {
+  function t(t) {
+    for (
+      var n, o, i = t[0], c = t[1], l = t[2], f = 0, d = [];
+      f < i.length;
+      f++
+    )
+      (o = i[f]),
+        Object.prototype.hasOwnProperty.call(a, o) && a[o] && d.push(a[o][0]),
+        (a[o] = 0);
+    for (n in c) Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]);
+    for (s && s(t); d.length; ) d.shift()();
+    return u.push.apply(u, l || []), r();
+  }
+  function r() {
+    for (var e, t = 0; t < u.length; t++) {
+      for (var r = u[t], n = !0, o = 1; o < r.length; o++) {
+        var c = r[o];
+        0 !== a[c] && (n = !1);
+      }
+      n && (u.splice(t--, 1), (e = i((i.s = r[0]))));
+    }
+    return e;
+  }
+  var n = {},
+    o = { 2: 0 },
+    a = { 2: 0 },
+    u = [];
+  function i(t) {
+    if (n[t]) return n[t].exports;
+    var r = (n[t] = { i: t, l: !1, exports: {} });
+    return e[t].call(r.exports, r, r.exports, i), (r.l = !0), r.exports;
+  }
+  (i.e = function (e) {
+    var t = [];
+    o[e]
+      ? t.push(o[e])
+      : 0 !== o[e] &&
+        { 3: 1, 5: 1, 6: 1 }[e] &&
+        t.push(
+          (o[e] = new Promise(function (t, r) {
+            for (
+              var n =
+                  'https://cdn.jsdelivr.net/gh/SimonAKing/cdn/css/' +
+                  ({}[e] || e) +
+                  '.' +
+                  {
+										0: '31d6cfe0',
+                    3: 'b381816b',
+                    5: '0a47e3ba',
+                    6: 'cac6c82d',
+                    7: '31d6cfe0',
+                  }[e] +
+                  '.chunk.css',
+                a = n,
+                u = document.getElementsByTagName('link'),
+                c = 0;
+              c < u.length;
+              c++
+            ) {
+              var l =
+                (s = u[c]).getAttribute('data-href') || s.getAttribute('href');
+              if ('stylesheet' === s.rel && (l === n || l === a)) return t();
+            }
+            var f = document.getElementsByTagName('style');
+            for (c = 0; c < f.length; c++) {
+              var s;
+              if ((l = (s = f[c]).getAttribute('data-href')) === n || l === a)
+                return t();
+            }
+            var d = document.createElement('link');
+            (d.rel = 'stylesheet'),
+              (d.type = 'text/css'),
+              (d.onload = t),
+              (d.onerror = function (t) {
+                var n = (t && t.target && t.target.src) || a,
+                  u = new Error(
+                    'Loading CSS chunk ' + e + ' failed.\n(' + n + ')'
+                  );
+                (u.code = 'CSS_CHUNK_LOAD_FAILED'),
+                  (u.request = n),
+                  delete o[e],
+                  d.parentNode.removeChild(d),
+                  r(u);
+              }),
+              (d.href = a),
+              document.getElementsByTagName('head')[0].appendChild(d);
+          }).then(function () {
+            o[e] = 0;
+          }))
+        );
+    var r = a[e];
+    if (0 !== r)
+      if (r) t.push(r[2]);
+      else {
+        var n = new Promise(function (t, n) {
+          r = a[e] = [t, n];
+        });
+        t.push((r[2] = n));
+        var u,
+          c = document.createElement('script');
+        (c.charset = 'utf-8'),
+          (c.timeout = 120),
+          i.nc && c.setAttribute('nonce', i.nc),
+          (c.src = (function (e) {
+            return (
+              'https://cdn.jsdelivr.net/gh/SimonAKing/cdn/js/' +
+              ({}[e] || e) +
+              '.' +
+              {
+								0: 'a1c55410',
+                3: 'cdf74b3b',
+                5: 'caa6c3c8',
+                6: 'c2875fdd',
+                7: 'b6c56c82',
+              }[e] +
+              '.chunk.js'
+            );
+          })(e));
+        var l = new Error();
+        u = function (t) {
+          (c.onerror = c.onload = null), clearTimeout(f);
+          var r = a[e];
+          if (0 !== r) {
+            if (r) {
+              var n = t && ('load' === t.type ? 'missing' : t.type),
+                o = t && t.target && t.target.src;
+              (l.message =
+                'Loading chunk ' + e + ' failed.\n(' + n + ': ' + o + ')'),
+                (l.name = 'ChunkLoadError'),
+                (l.type = n),
+                (l.request = o),
+                r[1](l);
+            }
+            a[e] = void 0;
+          }
+        };
+        var f = setTimeout(function () {
+          u({ type: 'timeout', target: c });
+        }, 12e4);
+        (c.onerror = c.onload = u), document.head.appendChild(c);
+      }
+    return Promise.all(t);
+  }),
+    (i.m = e),
+    (i.c = n),
+    (i.d = function (e, t, r) {
+      i.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r });
+    }),
+    (i.r = function (e) {
+      'undefined' !== typeof Symbol &&
+        Symbol.toStringTag &&
+        Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
+        Object.defineProperty(e, '__esModule', { value: !0 });
+    }),
+    (i.t = function (e, t) {
+      if ((1 & t && (e = i(e)), 8 & t)) return e;
+      if (4 & t && 'object' === typeof e && e && e.__esModule) return e;
+      var r = Object.create(null);
+      if (
+        (i.r(r),
+        Object.defineProperty(r, 'default', { enumerable: !0, value: e }),
+        2 & t && 'string' != typeof e)
+      )
+        for (var n in e)
+          i.d(
+            r,
+            n,
+            function (t) {
+              return e[t];
+            }.bind(null, n)
+          );
+      return r;
+    }),
+    (i.n = function (e) {
+      var t =
+        e && e.__esModule
+          ? function () {
+              return e.default;
+            }
+          : function () {
+              return e;
+            };
+      return i.d(t, 'a', t), t;
+    }),
+    (i.o = function (e, t) {
+      return Object.prototype.hasOwnProperty.call(e, t);
+    }),
+    (i.p = '/'),
+    (i.oe = function (e) {
+      throw (console.error(e), e);
+    });
+  var c = (this.webpackJsonpweibo = this.webpackJsonpweibo || []),
+    l = c.push.bind(c);
+  (c.push = t), (c = c.slice());
+  for (var f = 0; f < c.length; f++) t(c[f]);
+  var s = l;
+  r();
+})([]);
+</script><script src="https://cdn.jsdelivr.net/gh/SimonAKing/cdn/js/4.73727e44.chunk.js"></script><script src="https://cdn.jsdelivr.net/gh/SimonAKing/cdn/js/main.c701970a.chunk.js"></script><blockquote class="post-copyright"><div class="content"> <span class="post-time">最后更新：<time datetime="2025-04-01T04:41:11.568Z">2025-04-01 12:41:11</time></span> 原文链接：<a href="/blog/weibo/" target="_blank" rel="external">https://tomotoes.com/blog/weibo/</a></div><footer><ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Page/" rel="tag">Page</a></li></ul><div> <img itemprop="image" lass="copyimg" src="https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/avatar.jpg" alt="SimonAKing"> <a itemprop="author" itemscope itemtype="http://schema.org/Person" href="/blog">SimonAKing</a></div></footer></blockquote></div></article></div></main><div class="bgheader"><div id="header-hero"></div></div><template id="cube-template"><div class="cube fade"><div class="shadow"></div><div class="sides"><div class="back"></div><div class="top"></div><div class="left"></div><div class="front"></div><div class="right"></div><div class="bottom"></div></div></div></template><div class="mask" id="mask"></div><a href="javascript:;" id="gotop" class="fade-scale waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevronup"></span></a><div class="search-panel " id="search-panel"><ul class="search-result" id="search-result"></ul></div><template id="search-tpl"><li class="item waves-block waves-effect" onclick="location.href='{path}'" data-path="{path}"><div class="title ellipsis" title="{title}">{title}</div></li></template><div id="color-picker" class="page-modal"><a class="close" href="javascript:;"><i class="icon icon-close2"></i></a><br><h4><i class="icon icon-quote-left"></i> <span>自定义主题颜色</span><i class="icon icon-quote-right"></i></h4><div id="color-picker-container"></div></div><div id="wechat" class="page-modal wechat-wrap"><a class="close" href="javascript:;"><i class="icon icon-close2"></i></a><br><h4 class="wechat-title"> <span>添加我的微信<br><i class="icon icon-quote-left"></i> simonaking<i class="icon icon-quote-right"></i></span></h4> <img id="wechat_img" src="https://cdn.jsdelivr.net/gh/SimonAKing/images/blog/wx.png" alt="欢迎您的关注！" style="margin-top: 5%"></div><script src="https://tomotoes.com/registerSW.js?v=37b1ed011c7f7"></script><script src="https://cdn.jsdelivr.net/gh/SimonAKing/js/log.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/src/js/waves.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/headroom.js@0.12.0/dist/headroom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5.2.3/dist/iro.min.js"></script><script src="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/js/particles-585dd6bbf8.js"></script><script src="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/js/main-4c845175ee.js"></script><script src="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/js/script-41743558b0.js"></script><script src="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/js/module/hover-effect-e72a114ce3.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js"></script><script src="https://cdn.jsdelivr.net/gh/SimonAKing/blog@37b1ed011c7f7/js/module/post-5ac1a0a3d9.js"></script><script defer src="https://cdn.jsdelivr.net/gh/SimonAKing/js/translate-ff7607fcb8.js"></script></body></html>
