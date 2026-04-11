@@ -1,0 +1,190 @@
+/* live2d */
+// if (!isPhone) {
+
+	/* 是否支持 WebGL */
+	function isSupportWebGL() { try { const canvas = document.createElement('canvas'); return !!(window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))) } catch (e) { return false } }
+
+	if (isSupportWebGL()) {
+
+		/* 响应式 */
+		// if (windowHeight < 743) { const lineHeight = windowHeight * 0.058; $('.nav').css({ 'line-height': `${lineHeight}px` }); /* 屏幕缩放的差值 乘以 位移系数 加上 原始值 */ const translate = (743 - windowHeight) * 0.198 + 13; $('#landlord').css({ 'transform': `translateY(${translate}%)` }) }
+
+		/* 渲染提示 */
+		function renderTip(template, context) { let tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g; return template.replace(tokenReg, function (word, slash1, token, slash2) { if (slash1 || slash2) { return word.replace('\\', '') } let variables = token.replace(/\s/g, '').split('.'); let currentObject = context; let i, length, variable; for (i = 0, length = variables.length; i < length; ++i) { variable = variables[i]; currentObject = currentObject[variable]; if (currentObject === undefined || currentObject === null) { return '' } } return currentObject }) } String.prototype.renderTip = function (context) { return renderTip(this, context) }
+
+		/* 事件模型 （选择器，提示内容） */
+		const eventModel = {
+			mouseover: [
+				'a',
+				'检测到超链接 <span style="color:#0099cc;">{text}</span> ，是否需要导航？',
+				'.live2dplane',
+				'<span style="color:#333;">正在启动图像捕捉模块，请保持微笑 :)</span>',
+				'.exchange',
+				'<span style="color:#333;">正在切换渲染模式，请稍候...</span>',
+				'.gt-meta',
+				'欢迎在评论区留下你的见解！',
+				'#gotop',
+				'准备启动返回顶部协议...',
+				'#qrcode',
+				'移动端适配已就绪，请扫描二维码继续浏览',
+				'.comment_reply',
+				'正在打开回复编辑器...',
+				'#author',
+				'请输入您的身份标识符',
+				'img',
+				'图片查看器已就绪，点击可触发图片缩放功能',
+				'body>img',
+				'再次点击将重置图片显示参数',
+				'.page-number',
+				'页面跳转模块已激活！',
+				'.github-emoji',
+				'表情渲染引擎加载完毕 (๑•̀ㅂ•́)و✧',
+				'#name',
+				'Admin 正在后台进行维护工作~',
+				'.prev',
+				'正在加载上一页缓存...',
+				'.next',
+				'正在预加载下一页内容...',
+				'.avatar',
+				'检测到管理员权限认证标识~',
+				'.post-toc-link',
+				'正在计算跳转坐标：<span style="color:#0099cc;">{text}</span>',
+				'.post-more',
+				'更多精彩内容正在解密中...',
+				'#rewardBtn',
+				'赞赏系统已启动，感谢您的支持！',
+				'#menu-toggle',
+				'菜单服务已激活，随时待命！',
+				'#color-picker-icon',
+				'配色方案切换模块已就绪~',
+				'#search-wrap',
+				'搜索引擎已启动，需要帮您检索什么？',
+				'#shareFab',
+				'分享模块已加载完毕，准备传播知识！',
+				'.share-sns',
+				'社交分享接口已就绪~',
+				'.light',
+				'正在切换到护眼模式，请稍候...',
+				'.live2dview',
+				'模型渲染引擎已加载完毕，准备就绪！',
+				'.live2dchat',
+				'猜猜我要对你说些什么~',
+				'.nav li a',
+				'要去 <span style="color:#0099cc;">{text}</span> 看看么？',
+				'.motto',
+				'(￣▽￣)非主流的签名...',
+				'.gt-container',
+				'欢迎留下您的真知灼见',
+				'.post-card .post-content a',
+				'这篇文章很有意思,值得一读',
+				'.post-copyright',
+				'知识共享,请遵循开源协议',
+				'.footer-content',
+				'这里有一些有趣的站点信息',
+				'.article-category-list-link',
+				'探索 <span style="color:#0099cc;">{text}</span> 分类的知识库',
+				'.article-tag-list-link',
+				'发现 <span style="color:#0099cc;">{text}</span> 标签下的精彩内容',
+				'.tag-link',
+				'深入了解 <span style="color:#0099cc;">{text}</span> 相关主题',
+				'.archivestitle',
+				'( 觉悟ing... )',
+				'.gt-btn-public',
+				'认真填写哦，垃圾评论是禁止事项'
+			],
+			click: [
+				'.live2dview',
+				'正在切换模型渲染参数...',
+				'.nav li a',
+				'路由跳转程序执行中...',
+				'.exchange',
+				'正在进行编码转换...',
+				'.live2dplane',
+				'游戏引擎启动：方向键移动，空格射击！',
+				'.gt-btn-public',
+				'评论提交中，请稍候...',
+				'.light',
+				'显示模式切换中...'
+			]
+		}
+
+
+		function bindEvent(type, timeout) {
+			for (let i = 0; i < eventModel[type].length; i += 2) {
+				$(eventModel[type][i])[type](function () {
+					showMessage(eventModel[type][i + 1].renderTip({
+						text: $(this).text()
+					}), timeout)
+				})
+			}
+			return bindEvent
+		}
+		bindEvent('mouseover', 3000)('click', 5000)
+
+		$(document).on('copy', function () {
+			showMessage('你都复制了些什么呀，转载要记得加上出处哦~~')
+		})
+
+		$(document).on('keydown', function (e) {
+			if (e.keyCode === 114) {
+				showMessage('你想搜索什么啊~')
+			} else if (e.keyCode === 123) {
+				showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？')
+			} else if (e.keyCode === 37 || e.keyCode === 38 || e.keyCode === 39 || e.keyCode === 40) {
+				showMessage('上上下下，左左右右...')
+			}
+		})
+
+		/* 搜索栏提示 */
+		let searchTip
+		const sInput = $('.search-input')
+		sInput.on('keyup', function (e) {
+			searchTip = document.querySelector('.tips') ? '搜索不到你的答案了，换个关键字试试吧~' : `包含关键字 <span style=\"color:#0099cc;\">${+sInput.val()}</span> 的文章`.renderTip({
+				text: $(this).text()
+			})
+			showMessage(searchTip)
+		})
+
+		/* 身体点击事件 */
+		const words = [
+			'检测到未授权的触摸操作！',
+			'警告：接触传感器被触发',
+			'请注意！这是私人领域 ⌇●﹏●⌇',
+			'正在记录可疑行为...',
+			'安全防护系统已启动！',
+			'警告：越界访问已记录',
+			'正在启动防御程序...'
+		]
+		let wordsIndex = -1
+		function dontTouchMe() {
+			++wordsIndex === words.length && (wordsIndex = 0),
+				showMessage(words[wordsIndex].renderTip({
+					text: $(this).text()
+				}))
+		}
+
+		const hitokotos = ['我只是做了我能做的事，没有时间想将来。', '就算是自私…我也希望那些人能够永远都有笑容…', '我到底要以怎么样的速度生活才能与你再次相遇？', '伤害别人的人，就要有被伤害的觉悟！', '我在时光斑驳深处，聆听到花开的声音。', '如果你是魔女，我只要化身魔王就可以了。', '不管是怎样的回忆，都是我们活过的人生。', '一直注视着你，似近似远，总是触碰不到。', '你的那双手呢，是为了紧紧抓住什么而存在的哦。', '有伤害人的人存在的话，也会有能抚慰伤痕的人', '当你想做一件事，却无能为力的时候，是最痛苦的。', '即使从梦中醒来，还会有回忆留下。', '我们的心就像那天空一样，永不分离。', '不相信人咬不到肚脐的，咬破肚脐去死如何？', '时间是伟大的作家，总会写下完美的结局。', '一定要保护自己的梦想，即使牺牲一切。', '正因为生来什么都没有，因此我们能拥有一切。', '我的愿望是—幸福地活着，幸福地死去。', '在弱者眼里可能是这样，不过，我的确很强。', '假如我们相遇，肯定一眼就能认出彼此', '并非喜欢、也不是爱。而是更加深刻而沉重的——', '从小好女色的男人的想像力比不上狗。', '即使你忘记了我，我也不会遗忘你。', '所谓的奇迹就是要发生之后才会有价值存在的吧', '爱，其实很简单，困难的是去接受它。', '做出一副温柔的样子来折磨人不是更令人难受吗？', '你的心可以属于耶稣，但你的屁股永远属于陆战队！', '无论最终的结果是什么，只要这是自己选择的道路。', '我们走过风走过雨，就是没能走进彼此的内心。', '已经无法回到过去了。也不知道将来会是什么模样。', '不论是过去还是未来，我都会保护你！', '人生最糟糕的事，一个是饿肚子，一个是孤独。', '即使想放弃，也没法放弃最想要的东西，这就是人', '真正重要的东西，总是没有的人比拥有的人清楚。', '死亡只要在人生的终点尝试一次就够了~', '因为我喜欢你，喜欢得想吃掉你啊！', '彼方为谁，无我有问 ；九月露湿，待君之前', '命运的红线一旦断了，就再也不会接上。', '我会继续等着你，就算是一万二千年。', '红茶的温度和女人心在任何时代都是难以琢磨呢。', '前天是小兔子,昨天是小鹿,今天是你', '即使你已经习惯了受伤害，也有人看了会心疼的。', 'Time waits for no one.', '自杀是没有理由的，只是今天没有飞起来罢了。', '努力是不会背叛自己的，虽然梦想有时会背叛自己。', '别人恋爱不成功，你连暗恋都不成功！', '不要哀求，学会争取；若是如此，终有所获。', '我觉得只要这样继续加油，总有一天能赶上他们的。', '美丽的不是这个世界，而是看世界的你的眼神。', '只要努力活下去，总有一天会笑着回忆。', '比自己，比梦想更重要的东西永远都存在着...', '只要一天活著,难过的事总有一天会让你笑著说出来。', '时间可以治愈？如果时间也病了怎么办', '人就是要以自卑为跳板才能跳得更高。', '我动身踏上旅程，是为了与你道别。', '我是一个经常笑的人，可我不是经常开心的人。', '正因生来一无所有，因此我们能拥有一切。', '时间带着明显的恶意，缓缓在我的头顶流逝。', '干燥的冷气，尘埃的味道，我在其中……踏上旅途。', '时间可以治愈？如果时间也病了怎么办？', '只要有你想要保护的东西，那就拔剑好了。', '只要有想见面的人，自己就不再是孤单一人。', '呐，知道么，樱花飘落的速度，是每秒五厘米哦~', '男生送的礼物要方便拿来换钱才好吧！', '大部分人并不想长大，只是没办法继续当一个小孩子', '贫乳是社会地位的象征。是具有稀有价值的！', 'MAKE OUR DREAMS ALIVE', '能够轻易就放弃的梦想，有存在的价值么？', '我们开始一起攀登，这长长的，长长的坡道。', '真正重要的东西，永远都是非常简单的。', '我不会忘记，一直，都留在我的心间。', '因为无法再见面，所以要笑着说再见。', '追逐梦想的人比抓住梦想的人更能发挥实力。']
+		let hIndex = Number(localStorage.getItem('hIndex'))
+		/* 一言 */
+		function showHitokoto() {
+			showMessage(hitokotos[hIndex])
+			++hIndex === hitokotos.length && (hIndex = 0),
+				localStorage.setItem('hIndex', hIndex)
+		}
+		function takePicture(){
+			showMessage('图像捕获完成! 希望这张截图能记录下这个精彩瞬间。', 5000)
+			window.Live2D.captureName = 'capture.png'
+			window.Live2D.captureFrame = true
+		}
+
+		/* 对话框 */
+		const messageDom = $('.message')
+		function showMessage(text, timeout = 5000) {
+			messageDom.stop().html(text).fadeTo(200, 1).stop().css('opacity', 1).delay(timeout).fadeTo(200, 0)
+		}
+
+		document.getElementById('landlord').style.display = 'block'
+
+		showMessage('系统初始化完成，AI助手已启动！')
+	}
+//}
