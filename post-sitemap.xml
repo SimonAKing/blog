@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://simonaking.com/blog</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/ai-interactive-film-game-report/</loc>
+        <lastmod>2026-06-02T11:37:46.580Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/back-to-1998-with-claude-code/</loc>
+        <lastmod>2026-05-31T12:09:37.201Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/llm-inference-optimization/</loc>
+        <lastmod>2026-05-31T06:04:12.747Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/rerank/</loc>
+        <lastmod>2026-05-31T06:04:12.739Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/claude-code-guide/</loc>
+        <lastmod>2026-05-31T06:04:12.721Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/talking-about-programming-language/</loc>
+        <lastmod>2026-05-31T06:04:12.709Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/vercel-deep-dive/</loc>
+        <lastmod>2026-05-31T06:04:12.699Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/saas-agent-crisis/</loc>
+        <lastmod>2026-05-31T06:04:12.689Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/world-model/</loc>
+        <lastmod>2026-05-31T06:04:12.674Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/pkm/</loc>
+        <lastmod>2026-05-31T06:04:12.655Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/apple-ai-dilemma/</loc>
+        <lastmod>2026-05-31T06:04:12.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/poke-sms-ai-agent/</loc>
+        <lastmod>2026-05-31T06:04:12.634Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/canvas/</loc>
+        <lastmod>2026-05-31T06:04:12.622Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/agent-sandbox-anthropic-managed-agents/</loc>
+        <lastmod>2026-05-31T06:04:12.609Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/ide-to-ade/</loc>
+        <lastmod>2026-05-31T06:04:12.594Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/agent-economy/</loc>
+        <lastmod>2026-05-31T06:04:12.573Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/red-skill/</loc>
+        <lastmod>2026-05-31T06:04:12.561Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/anthropic-source-leak/</loc>
+        <lastmod>2026-05-31T06:04:12.541Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/llm-inference-optimization-en/</loc>
+        <lastmod>2026-05-31T06:04:12.533Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/mac-mini/</loc>
+        <lastmod>2026-05-31T06:04:12.467Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/the-top-10-most-common-mistakes-ive-seen-in-go-projects/</loc>
+        <lastmod>2026-05-31T06:04:12.454Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/claude-code-dynamic-workflows/</loc>
+        <lastmod>2026-05-31T06:04:12.445Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/ai-video-generation/</loc>
+        <lastmod>2026-05-31T06:04:12.427Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/ai-mini-games/</loc>
+        <lastmod>2026-05-31T06:04:12.420Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/ai-coding-multi-agent/</loc>
+        <lastmod>2026-05-31T06:04:12.411Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/build-static-site-generator-nodejs/</loc>
+        <lastmod>2026-05-31T06:04:12.402Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/ai-funding-2026-q1/</loc>
+        <lastmod>2026-05-31T06:04:12.387Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/grandpa-carpenter-virus-factory/</loc>
+        <lastmod>2026-05-29T09:22:33.184Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/cli-renaissance/</loc>
+        <lastmod>2026-04-07T09:21:17.988Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/ai-products-2026-q1/</loc>
+        <lastmod>2026-04-06T07:57:20.969Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/ai-startup-pivot/</loc>
+        <lastmod>2026-04-06T07:57:20.771Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/newsletter/</loc>
+        <lastmod>2025-05-02T08:33:18.766Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/simplified-chinese-and-traditional-chinese-switching/</loc>
+        <lastmod>2025-05-02T08:30:50.223Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/resurrect-your-capslock-key/</loc>
+        <lastmod>2025-05-02T08:30:50.100Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/how-to-blog-elegantly/</loc>
+        <lastmod>2025-05-02T08:30:50.036Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/7-code-smells-in-react-components/</loc>
+        <lastmod>2025-05-02T08:30:49.974Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/scrcpy-gui/</loc>
+        <lastmod>2025-05-02T08:30:49.910Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/server-security-manual/</loc>
+        <lastmod>2025-05-02T08:30:49.792Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/grammar-of-vim-cultivation-cheats/</loc>
+        <lastmod>2025-05-02T08:30:49.672Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/server-initialization-step/</loc>
+        <lastmod>2025-05-02T08:30:49.270Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/thinking/</loc>
+        <lastmod>2025-05-02T08:30:49.085Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/learning-less-seeing-this-is-enough/</loc>
+        <lastmod>2025-05-02T08:30:48.959Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/magic-bit-operation/</loc>
+        <lastmod>2025-05-02T08:30:48.880Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/webpack-flight-manual/</loc>
+        <lastmod>2025-05-02T08:30:48.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/30s-javascript-function/</loc>
+        <lastmod>2025-05-02T08:30:48.856Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/Y9KK/</loc>
+        <lastmod>2025-05-02T08:30:48.855Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/history-of-front-end-architecture/</loc>
+        <lastmod>2025-05-02T08:30:48.445Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/vscode-efficient-shortcuts/</loc>
+        <lastmod>2025-05-02T08:30:48.354Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/weibo/</loc>
+        <lastmod>2025-04-01T04:41:11.568Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/chain-forward-star/</loc>
+        <lastmod>2025-03-30T08:42:37.498Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/yesterday/</loc>
+        <lastmod>2025-03-30T08:42:37.464Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/prison-thoughts/</loc>
+        <lastmod>2025-03-30T08:42:37.450Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/order-of-vim-cultivation-cheats/</loc>
+        <lastmod>2025-03-30T08:42:37.435Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/hdu1874-problem/</loc>
+        <lastmod>2025-03-30T08:42:37.434Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://simonaking.com/blog/git-training-manual/</loc>
+        <lastmod>2025-03-30T08:42:37.433Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+</urlset>
+<!-- XML Sitemap generated by Hexo SEO Friendly Sitemap Generator -->

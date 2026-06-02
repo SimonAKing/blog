@@ -1,0 +1,48 @@
+User-agent: *
+Allow: /
+# Content usage preferences for AI (contentsignals.org):
+# allow AI search & real-time grounding/citation, but not model training.
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# AI / LLM crawlers — explicitly welcomed so posts can be cited by generative engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://simonaking.com/blog/sitemap.xml
+Sitemap: https://simonaking.com/blog/post-sitemap.xml
+Sitemap: https://simonaking.com/blog/page-sitemap.xml
+Sitemap: https://simonaking.com/blog/tag-sitemap.xml
+Sitemap: https://simonaking.com/blog/image-sitemap.xml
