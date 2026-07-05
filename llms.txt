@@ -1,0 +1,72 @@
+# SimonAKing
+
+> STDIN | Think >> /dev/Mind
+
+SimonAKing 的个人博客，聚焦 AI、Agent、编程、产品与科技人文。本文件是机器可读的内容索引，供大语言模型检索、理解与引用。
+
+- Site: https://simonaking.com/blog
+- Author: SimonAKing
+- Contact: hi@simonaking.com
+- RSS: https://simonaking.com/blog/atom.xml
+- Sitemap: https://simonaking.com/blog/sitemap.xml
+
+## Posts
+
+- [模型适配权：Anthropic 藏得最深的垄断](https://simonaking.com/blog/anthropic-model-adaptation-monopoly/) (2026-07-05): 地表最强的大模型 Opus 4.8，最近栽在了一个很基础的错误上。 背景来自 Pi Agent（支持 OpenClaw 的内核），Pi Agent coding 时，一次能改好几处代码，可经常 Opu
+- [全体进化：SkillOpt 赢麻了 与 营销号的狂欢](https://simonaking.com/blog/skillopt-evolution/) (2026-06-06): 2026 年 5 月，微软研究院联合各大高校发了篇论文，叫 SkillOpt。一句话概括：雇一个 GPT 当教练，反复改另一个 GPT 的小抄，改一次考一次，考好了留下，考砸了回滚。 战绩单很吓人：六
+- [BYOA 是 vibe coding 产品的唯一出路](https://simonaking.com/blog/byoa-vibe-coding/) (2026-06-04): 今天 LLM 整个应用层的效果、成本和增长，都依赖三五家模型厂的定价权上，Anthropic 在 2026 年 4 月把企业版从固定价改成按量动态定价，重度用户的成本可能因此翻倍甚至三倍；它在企业级大
+- [AI 互动影游全球深度报告](https://simonaking.com/blog/ai-interactive-film-game-report/) (2026-06-02): 互动影游不是新概念，但这五十多年里一直是个小众品类。2026 年这条赛道重新热起来，直接原因是 AI 改变了它的成本结构。一篇拆解 AI 互动影游四大子赛道、四套算法策略与商业化现实的全球深度报告。
+- [带着 Claude Code 回到 1998](https://simonaking.com/blog/back-to-1998-with-claude-code/) (2026-05-31): 2026年，凌晨四点十七分。 陆知行趴在工位上，三块显示器的蓝光打在他二十二岁却已熬出黑眼圈的脸上。连续加班三十六个小时，线上服务刚雪崩过一轮，他熬着最后一口气把熔断阈值调好、把扩容脚本推上去，钉钉上
+- [Claude Code Dynamic Workflows 深度解析](https://simonaking.com/blog/claude-code-dynamic-workflows/) (2026-05-30): 5 月 28 日，Anthropic 在发布 Claude Opus 4.8 的同时，向所有付费 Claude Code 用户开放了一项研究预览特性，叫 Dynamic Workflows。表面上
+- [小红书 RED Skill：把 "种草" 升级成 "种 Skill"](https://simonaking.com/blog/red-skill/) (2026-05-29): 2026 年 5 月下旬，距离港股市场期待已久的小红书 IPO 越来越近的窗口期里，小红书做了一个表面上几乎毫无声响、本质上意义重大的动作。
+- [爷、木匠与病毒工厂](https://simonaking.com/blog/grandpa-carpenter-virus-factory/) (2026-04-17): 第一个爷是技术的爷。OpenAI、Anthropic、Google。他们卖给你模型能力，按 token 计价，每一次调用他们都看着。Anthropic 的 Claude Opus 4.6 在 Tier
+- [深度拆解 Vercel：AI 时代最被低估的基建公司](https://simonaking.com/blog/vercel-deep-dive/) (2026-04-11): 如果你只把 Vercel 理解为“一个部署前端项目的工具”，那你大概只看到了它的 10%。Vercel 现在的估值是 93 亿美元，GAAP 年化收入已达 3.4 亿，同比增长 84%。这个数字放在
+- [深度分析 Poke：一个活在短信里的 AI Agent，凭什么让硅谷 all in](https://simonaking.com/blog/poke-sms-ai-agent/) (2026-04-10): 产品形态简单到离谱:你加一个 iMessage 联系人，它是产品所有了。你发消息，它帮你办事。没有 App，没有网页，没有新交互，就是发短信。 它的起点是一个很简单的观察:你每天打开 iMessage
+- [每个 Agent 都需要一台"电脑"——从 Anthropic Managed Agents 拆解沙箱赛道](https://simonaking.com/blog/agent-sandbox-anthropic-managed-agents/) (2026-04-09): Context Window 就是 RAM，Filesystem 就是 Disk。所有重要的东西都应该写到磁盘上。 以 Manus 举例，Agent 在执行任务时会创建三个 markdown 文件：t
+- [所有人都在从 IDE 搬向 ADE，你还在"写"代码吗？](https://simonaking.com/blog/ide-to-ade/) (2026-04-08): 当编辑器变成配角，编排层变成主角 认真想一下这个问题。 上一次我打开 VS Code，不是为了 Review 一下 AI 干的活，而是真的坐在那里一行一行写代码。 如果答案是“上个月”，欢迎来到 AD
+- [深度分析：世界模型全景地图—从 30 秒手搓小游戏到 10 亿种子轮](https://simonaking.com/blog/world-model/) (2026-04-07): 三组数据，先感受一下这个赛道的温度： ① 2026 年 3 月，Yann LeCun 的 AMI Labs 完成 10.3 亿美金种子轮，欧洲史上最大。同一个月，李飞飞的 World
+- [深度分析：Karpathy 的 Wiki 与 PKM 赛道的变数](https://simonaking.com/blog/pkm/) (2026-04-06): 四次变革、30 个产品、一张象限图。 在创业前，我观察最久的行业 与 最想做的产品都是 PKM(个人知识管理)赛道的。这些年，我前后用过十几个知识管理产品——Readwise 读文章、Obsidian
+- [深度分析：在 Linear、Notion、Basecamp 同时把产品变成聊天框后](https://simonaking.com/blog/saas-agent-crisis/) (2026-04-05): Linear 宣布 Issue Tracking 已死、Notion 发布自主 Agent、Basecamp 全面拥抱 CLI ——2026 年，SaaS 行业正在经历一场集体身份危机 202
+- [深度分析：Apple 的 AI 困局 一家万亿公司的傲慢、内斗与自我救赎](https://simonaking.com/blog/apple-ai-dilemma/) (2026-04-04): 一、Siri：从行业先驱到全公司最大的笑话 新Siri的“发光边框”——两年了，用户等来的就这个 2011年，Siri随iPhone 4S登场，教会了几亿人怎
+- [烧了 250 亿 token 后，我总结的 3w 字 Claude Code 使用教程](https://simonaking.com/blog/claude-code-guide/) (2026-04-03): Claude Code 大概是 2026 年最让人又爱又恨的开发工具。上周 Anthropic 在 Reddit 上承认：\"用户撞限速比我们预想的快得多。\"有 Max 用户（$200/月）说 19 分
+- [AI 视频生成赛道深度分析](https://simonaking.com/blog/ai-video-generation/) (2026-04-02): 先说结论模型层的第一仗打完了，产品层的战争才刚开始。2026年Q1的AI视频生成赛道，表面上热闹——Seedance 2.0炸场、Sora关停、可灵 3.0上4K、Veo 3.1稳扎稳打——但底层逻辑
+- [一家 3800 亿美元公司的底裤，被一行缺失的 .npmignore 扒了](https://simonaking.com/blog/anthropic-source-leak/) (2026-04-01): 不聊代码。聊钱、聊人、聊几个所有人都忽略了的细节。一、先说结论3月31日凌晨，Claude Code 发版时带了个 source map 文件，512,000 行源码全曝了。几小时内全网镜像，收不回来
+- [当 AI 开始雇佣人类：Agent 经济群像](https://simonaking.com/blog/agent-economy/) (2026-03-31): 678K 人类注册等待被 AI 租用，活跃 Agent 不足 100 个 这是一场关于人类焦虑、AI 能力边界和万亿级基础设施的故事 | RentAHuman 不是「TaskRabbit for
+- [2026 第一季度的 AI 新产品，谁夯谁拉](https://simonaking.com/blog/ai-products-2026-q1/) (2026-03-30): 覆盖 30+ 款产品 · 产品力 / 技术 / 分发营销 三维拆解 数据来源：GitHub / Product Hunt / TechCrunch / VentureBeat 评分纯属个人暴论，不构成
+- [CLI 复兴 一场正在发生的商业地震](https://simonaking.com/blog/cli-renaissance/) (2026-03-29): 当飞书、钉钉、Google 争先恐后发布 CLI，背后是什么一、发生了什么过去几周，三个重量级平台几乎同时出手了：飞书发布了官方 Lark CLI，钉钉开源了 dingtalk-workspace-c
+- [2026 年 Q1，AI 融资彻底疯了：1890 亿美元单月纪录背后的五大最热赛道](https://simonaking.com/blog/ai-funding-2026-q1/) (2026-03-28): OpenAI 单轮融1100亿，Anthtropic 融300亿，家务机器人都成独角兽了——创业者还有机会吗？2026年3月28日 · 阅读约15分钟 · AI产业深度如果你觉得2025年的AI融资已
+- [AI Coding 的下一步：不是谁更强，是怎么组队](https://simonaking.com/blog/ai-coding-multi-agent/) (2026-03-27): 试想一下这个画面： 左边终端跑着 Claude Code 在写代码，右边终端跑着 Codex 在 review，中间有个 bridge 让它们直接对话。你坐在后面，看它们讨论你的代码该怎么改。 这不是
+- [AI 小游戏社区：TikTok 之后，下一个 UGC 内容革命](https://simonaking.com/blog/ai-mini-games/) (2026-03-26): 2025年，一个全新的赛道正在爆发——AI小游戏社区。从Spielwerk到Gizmo（已被Meta收购），从Web3原生的Remix到老牌巨头Roblox的AI转型，这个赛道正在重新定义游戏的创作与
+- [AI 创业三个月三次转向，一个没变的信念](https://simonaking.com/blog/ai-startup-pivot/) (2026-03-20): 1 月初，我们做了用自然语言生成 iOS 快捷指令。 说一句话，串联起闹钟、健康、日历、提醒事项……590 多个原生能力全部打通。移动端的 n8n，用嘴编程。 兴奋了大概一周。 然后发现快捷指令不能前
+- [LLM Inference Optimization Overview - From Data to System Architecture](https://simonaking.com/blog/llm-inference-optimization-en/) (2025-05-05): As LLMs are widely adopted across various industries, achieving efficient inference while maintaining model performance has become a key challenge. To address t
+- [聊聊大模型推理加速：从数据到系统的技术概要](https://simonaking.com/blog/llm-inference-optimization/) (2025-03-27): 随着 LLMs 在各行各业的广泛应用，如何在保证模型性能的前提下实现高效推理已成为重点挑战之一。为了应对这些挑战，学术界和工业界提出了多种优化方案。本文将介绍了若干 LLMs 的推理加速相关的关键技术。如有错误或不准确之处，欢迎指正。
+- [聊聊 Rerank：从 BERT 到大模型的技术旅程](https://simonaking.com/blog/rerank/) (2024-12-09): 在 NLP 场景中，Rerank 作为一个关键环节，承担着对多路召回、多数据来源、多模态、多结构等不同类型数据的归一化和精筛作用。它能有效地整合和优化各类召回结果，对提升检索系统的整体性能至关重要。
+- [Mac Mini 换机指南](https://simonaking.com/blog/mac-mini/) (2023-05-22): 详细记录了从公司 MacBook 迁移到个人 Mac Mini 的全过程，包括系统配置、开发环境搭建、效率工具安装等内容，适合开发者参考。
+- [我的 Newsletter 精选清单](https://simonaking.com/blog/newsletter/) (2022-12-03): Newsletter 作为一种去平台化的信息源，能让我们重新掌握信息消费的主动权。本文分享了我多年来积累的高质量 Newsletter 信息源，包括技术主题与科技人文主题，以及相应的订阅方式和使用建议。
+- [浅谈搭建平台-画布篇](https://simonaking.com/blog/canvas/) (2022-11-11): 关于建站类，相信大家都能说出一些耳熟能详的产品，如早期的 Dreamweaver、获取上亿投资的Webflow 以及 国内的各个大厂的搭建平台等。搭建平台本身也是一款软件，本文将带你了解其中的奥秘。
+- [漫谈编程语言](https://simonaking.com/blog/talking-about-programming-language/) (2021-01-30): 漫谈编程语言，从编程语言的三大阵营到编程语言与语义学，编程范式，编程规范，编程语言的执行机制
+- [前端架构发展史](https://simonaking.com/blog/history-of-front-end-architecture/) (2021-01-22): 前端架构发展史，从一片荒芜到微前端。
+- [思考的价值](https://simonaking.com/blog/thinking/) (2021-01-16): 思考的价值， 是一个微信群，分享高质量信息、技术交流
+- [React 的 7 种代码异味[译]](https://simonaking.com/blog/7-code-smells-in-react-components/) (2020-11-15): React的7种代码异味, 教你如何更好地写React
+- [拯救者 Y9KK 换机指南](https://simonaking.com/blog/Y9KK/) (2020-05-27): 联想拯救者Y9KK换机指南, 包括笔记本测评, 软件推荐...
+- [30s 源码刨析系列之函数篇](https://simonaking.com/blog/30s-javascript-function/) (2020-03-01): 30secondsofcode 源码深入解析之 JavaScript 函数篇, 里面覆盖了大量函数式案例,由浅入深逐个击破各个代码片段, 带你领略源码之美
+- [手撸一个静态文档生成器[译]](https://simonaking.com/blog/build-static-site-generator-nodejs/) (2020-02-29): 40行代码手撸一个简易的静态文档生成器，让你了解到hexo，hugo等项目的具体工作流程。
+- [微博](https://simonaking.com/blog/weibo/) (2020-02-07): 想法,灵感汇总
+- [如何优雅地写博客](https://simonaking.com/blog/how-to-blog-elegantly/) (2020-01-24): 如何优雅地写博客，hexo与外设的完美结合。
+- [昨日青空](https://simonaking.com/blog/yesterday/) (2019-12-19): 起风了.
+- [[开源福利]Scrcpy-GUI](https://simonaking.com/blog/scrcpy-gui/) (2019-08-24): Scrcpy-GUI, 展示并控制你的 Android 设备
+- [Go 开发中的十大常见陷阱[译]](https://simonaking.com/blog/the-top-10-most-common-mistakes-ive-seen-in-go-projects/) (2019-08-17): Go开发中的十大常见陷阱
+- [服务器初始化](https://simonaking.com/blog/server-initialization-step/) (2019-05-05): 记一下服务器的初始配置，Centos 初始化的脚本汇总。
+- [肉鸡是怎样炼成的](https://simonaking.com/blog/server-security-manual/) (2019-04-30): 服务器安全防范。
+- [Vim 修炼秘籍之语法篇](https://simonaking.com/blog/grammar-of-vim-cultivation-cheats/) (2018-03-18): Vim,工具
+- [囚思](https://simonaking.com/blog/prison-thoughts/) (2018-03-08): 个人写的一首小词。
+- [Git 修炼手册](https://simonaking.com/blog/git-training-manual/) (2018-01-27): Git命令汇总。
+- [网站必备之简繁切换](https://simonaking.com/blog/simplified-chinese-and-traditional-chinese-switching/) (2018-01-26): 网站必备之简繁切换，简繁互换功能。
+- [神奇的位运算](https://simonaking.com/blog/magic-bit-operation/) (2018-01-25): 位运算讲解。
+- [让你的 Capslock 键变废为宝](https://simonaking.com/blog/resurrect-your-capslock-key/) (2018-01-18): 通过AutoHotKey魔改Capslock键。
+- [学习 Less-看这篇就够了](https://simonaking.com/blog/learning-less-seeing-this-is-enough/) (2017-12-08): 学习Less-看这篇就够了，Less大全。
+- [VSCode 之高效快捷键](https://simonaking.com/blog/vscode-efficient-shortcuts/) (2017-12-05): VSCode,快捷键,效率,工具
+- [Webpack 飞行手册](https://simonaking.com/blog/webpack-flight-manual/) (2017-11-30): Webpack学习手册。
+- [链式向前星](https://simonaking.com/blog/chain-forward-star/) (2017-11-22): 链式向前星,数据结构,ACM
+- [Vim 修炼秘籍之命令篇](https://simonaking.com/blog/order-of-vim-cultivation-cheats/) (2017-11-22): Vim,工具,命令
+- [HDU1874-畅通工程续](https://simonaking.com/blog/hdu1874-problem/) (2017-11-22): HDU,最短路,Dijkstra,ACM
